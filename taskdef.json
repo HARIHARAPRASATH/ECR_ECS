@@ -2,8 +2,8 @@
     "family": "v1-taskDefintion",
     "containerDefinitions": [
         {
-            "name": "webServer1",
-            "image": "853219876644.dkr.ecr.us-west-2.amazonaws.com/demo:latest",
+            "name": "webServer",
+            "image": "634677623658.dkr.ecr.ap-south-1.amazonaws.com/hello-world:latest:latest",
             "portMappings": [
                 {
                     "containerPort": 80,
