@@ -1,15 +1,7 @@
-FROM node:10
-
-# Create app directory
+FROM node:8-alpine
+RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
-
-COPY package*.json ./
-
-RUN npm install
-
-# Bundle app source
 COPY . .
-
-EXPOSE 8080
-
-CMD [ "node", "app.js" ]
+RUN npm install
+EXPOSE 3000
+CMD [ "node", "server.js" ]
